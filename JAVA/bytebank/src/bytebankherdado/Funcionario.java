@@ -1,14 +1,14 @@
 package bytebankherdado;
 
-public class Funcionario {
+//não podemos instanciar classes abstratas
+public abstract class Funcionario {
 
     private String nome;
     private String cpf;
     private double salario;
 
-    public double getBonificacao() {
-        return this.salario * 0.1;
-    }
+    //método sem corpo, não há implementação, porém lembre-se de sempre criar o método nas classes filhas
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;

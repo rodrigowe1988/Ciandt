@@ -1,8 +1,8 @@
 package bytebankherdado;
 
-public class EditorVideo extends Funcionario{
+public class Designer extends Funcionario{
 
     public double getBonificacao() {
-        return 100;
+        return 200;
     }
 }
