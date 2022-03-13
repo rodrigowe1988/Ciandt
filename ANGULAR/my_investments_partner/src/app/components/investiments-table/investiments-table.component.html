@@ -1,0 +1,29 @@
+<table class="table-responsive">
+  <tr *ngFor="let nome of nomeDasContas">
+    <th>{{nome.data}}</th>
+    <th>{{nome.rico}}</th>
+    <th>{{nome.modal}}</th>
+    <th>{{nome.clear}}</th>
+    <th>{{nome.sicredi}}</th>
+    <th>{{nome.santander}}</th>
+    <th>{{nome.bradesco}}</th>
+    <th>{{nome.nubank}}</th>
+
+  </tr>
+  <tr *ngFor="let conta of contas">
+    <td>{{conta.data}}</td>
+    <td>{{conta.rico}}</td>
+    <td>{{conta.modal}}</td>
+    <td>{{conta.clear}}</td>
+    <td>{{conta.sicredi}}</td>
+    <td>{{conta.santander}}</td>
+    <td>{{conta.bradesco}}</td>
+    <td>{{conta.nubank}}</td>
+    <button (click)="totalSomar(conta)">Somar</button>
+  </tr>
+</table>
+<br><br>
+<p>O total no dia <b>{{diaAnalisado}}</b> foi <b>R$ {{total}}.</b></p>
+
+
+

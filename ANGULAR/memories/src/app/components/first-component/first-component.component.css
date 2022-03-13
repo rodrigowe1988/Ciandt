@@ -1,0 +1,12 @@
+p {
+  padding-left: 15px;
+}
+
+h2 {
+  display: flex;
+  background-color: black;
+  color: aqua;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}

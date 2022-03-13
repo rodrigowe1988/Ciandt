@@ -1,0 +1,9 @@
+<div class="aula">
+  <div *ngIf="canShow">Estamos mostrando isso somente porque foi permitido</div>
+  <p>Abaixo temos um *ngIf false que não aparece! </p>
+  <div *ngIf="!canShow">Isso não deve aparecer na tela</div>
+  <h3 *ngIf="name === 'rodrigo' else nameNotFound">Meu nome é Rodrigo</h3>
+  <ng-template #nameNotFound>
+      <h2>O nome não foi encontrado!</h2>
+  </ng-template>
+</div>

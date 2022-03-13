@@ -1,0 +1,22 @@
+<div class="aula">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Species</th>
+    </tr>
+    <tr *ngFor="let animal of animals">
+      <td>{{animal.name}}</td>
+      <td>{{animal.age}}</td>
+      <td>{{animal.type}} </td>
+    </tr>
+  </table><br>
+  <ul>
+    <li *ngFor="let animal of animals">
+      Name: <b>{{animal.name}}</b> species: <b>{{animal.type}}</b><br>
+      <button (click)="showAge(animal)">Show age</button>
+    </li>
+  </ul>
+  <h3>{{ animalDetails }} </h3>
+
+</div>

@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.aula {
+  border-bottom: 1px solid red;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+h1
+ {
+   color: blueviolet;
+ }
+
+ body {
+   padding-bottom: 500px;
+ }
+
+ 
