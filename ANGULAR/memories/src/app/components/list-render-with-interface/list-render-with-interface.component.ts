@@ -10,17 +10,11 @@ import { Animal } from 'src/app/Animal';
 export class ListRenderWithInterfaceComponent implements OnInit {
 
   animals: Animal [] = [
-    {name: "Turca", type: "Dog", age: 4},
-    {name: "Tom", type: "Cat", age: 10},
-    {name: "Nutella", type: "Dog", age: 6},
-    {name: "Nemo", type: "Fish", age: 1}
+    {id: 1, name: "Turca", type: "Dog", age: 4},
+    {id: 2, name: "Tom", type: "Cat", age: 10},
+    {id: 3, name: "Nutella", type: "Dog", age: 6},
+    {id: 4, name: "Nemo", type: "Fish", age: 1}
   ]
-
-  animal: Animal = {
-    name: 'Teste',
-    type: 'Alguma coisa',
-    age: 7
-  }
 
   animalDetails = '';
 
@@ -33,5 +27,5 @@ export class ListRenderWithInterfaceComponent implements OnInit {
     this.animalDetails = `O pet ${animal.name} tem ${animal.age} anos.`;
   }
 
-  
+
 }

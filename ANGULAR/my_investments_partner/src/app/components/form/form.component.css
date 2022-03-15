@@ -1,0 +1,14 @@
+form {
+  border: 2.5px solid #009879;
+  padding: 20px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 900px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+input {
+  margin: 10px;
+  max-width: 300px;
+}

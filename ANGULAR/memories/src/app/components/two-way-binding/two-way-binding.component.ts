@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class TwoWayBindingComponent implements OnInit {
 
   name: string = "";
-  
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submitData () {
+    console.log("Enviando dados...");
   }
 
 }
