@@ -21,4 +21,8 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showVariables() {
+    console.log(this.data, this.rico)
+  }
+
 }

@@ -27,16 +27,6 @@ export class InvestimentsTableComponent implements OnInit {
 
   contas: Conta[] = [];
 
-  // contas: Conta [] = [
-
-  //   {data: "06/03/2022", rico: 85713.59, modal: 73587.37, clear: 24144.01, sicredi: 7424.22, santander: 5177.64, bradesco: 2594.08, nubank:293.25},
-  //   {data: "08/03/2022", rico: 85360.33, modal: 73199.23, clear: 23527.11, sicredi: 7424.2, santander: 5177.64, bradesco: 2594.08, nubank:184.00},
-  //   {data: "09/03/2022", rico: 85232.18, modal: 72922.69, clear: 23997.05, sicredi: 10514.65, santander: 5177.64, bradesco: 2594.08, nubank: 8.51},
-  //   {data: "10/03/2022", rico: 85304.04, modal: 73053.86, clear: 23816.99, sicredi: 9914.32, santander: 5177.64, bradesco: 2594.08, nubank: 8.51},
-  //   {data: "12/03/2022", rico: 85399.31, modal: 73077.49, clear: 23843.41, sicredi: 10485.13, santander: 5177.64, bradesco: 2594.08, nubank: 8.51},
-
-  // ];
-
   total: number = 0;
   diaAnalisado = '';
 
@@ -53,8 +43,8 @@ export class InvestimentsTableComponent implements OnInit {
   }
 
   removeInvestment(conta: Conta) {
-    console.log("removendo animal");
-    this.contas = this.tableService.remove(this.contas, conta);
+    this.contas = this.contas.filter((a) => conta.data !== a.data);
+    this.tableService.remove(conta.data).subscribe();
   }
 
   getInvestments(): void {

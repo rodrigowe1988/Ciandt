@@ -13,8 +13,8 @@ export class TableService {
 
   constructor(private http: HttpClient) { }
 
-  remove(contas: Conta[], conta: Conta) {
-    return contas.filter((a) => conta.data !== a.data);
+  remove(data: string) {
+    return this.http.delete<Conta>(`${this.apiUrl}/${data}`);
   }
 
   getAll(): Observable<Conta[]> {
