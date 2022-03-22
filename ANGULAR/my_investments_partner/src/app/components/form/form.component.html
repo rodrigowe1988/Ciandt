@@ -33,9 +33,9 @@
     <div class="col">
       Nubank:
       <input type="text" class="form-control" [(ngModel)]="nubank" placeholder="R$" name="name">
+      <p *ngIf="nubank !== 0">{{nubank}}</p>
     </div>
   </div>
-
 
   <input type="submit" value="Enviar">
 </form>
