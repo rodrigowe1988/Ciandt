@@ -4,6 +4,8 @@
     {"data":"16/03/2022", "rico": 85272.58, "modal": 73237.77, "clear": 24318.38, "sicredi": 9570.63, "santander": 5177.64, "bradesco": 2594.08, "nubank": 8.53},
     {"data":"18/03/2022", "rico": 85375.83, "modal": 73393.28, "clear": 24922.46, "sicredi": 9063.55, "santander": 5177.64, "bradesco": 2594.08, "nubank": 8.53},
     {"data":"21/03/2022", "rico": 85667.83, "modal": 73809.28, "clear": 24931.46, "sicredi": 8603.55, "santander": 5177.64, "bradesco": 2594.08, "nubank": 368.44},
-    {"data":"22/03/2022", "rico": 85530.83, "modal": 73681.28, "clear": 25039.46, "sicredi": 8603.55, "santander": 5177.64, "bradesco": 2594.08, "nubank": 368.55}
+    {"data":"22/03/2022", "rico": 85530.83, "modal": 73681.28, "clear": 25039.46, "sicredi": 8603.55, "santander": 5177.64, "bradesco": 2594.08, "nubank": 368.55},
+    {"data":"25/03/2022", "rico": 85420.83, "modal": 73619.28, "clear": 25227.46, "sicredi": 8603.55, "santander": 5177.64, "bradesco": 2594.08, "nubank": 368.55},
+    {"data":"27/03/2022", "rico": 85846.83, "modal": 73829.28, "clear": 25172.46, "sicredi": 8603.48, "santander": 5177.64, "bradesco": 2594.08, "nubank": 256.55}
   ]
 }
