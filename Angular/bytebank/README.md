@@ -1,6 +1,6 @@
 ﻿# Bytebank
 
-## *** IMPORTANT!!! *** Don’t forget to run the api with the follow commands:
+## ***IMPORTANT!!!*** Don’t forget to run the api with the follow commands:
 * sudo npm install -g json-server
 * json-server --watch db.json
 
