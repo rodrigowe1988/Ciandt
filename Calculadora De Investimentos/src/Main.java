@@ -44,6 +44,9 @@ public class Main {
         //total investido no dia 01/05/2022
         double investimentos7[] = {87116.42, 74586.01, 23289.27, 5914.83, 3715.43, 4390.79, 4531.81};
 
+        //total investido no dia 08/05/2022
+        double investimentos8[] = {86746.42, 74098.01, 22436.27, 12850.32, 10422.96};
+
         //criando um array com todos os totais já salvos
         ArrayList<Double> todosOsTotais = new ArrayList<>();
 
@@ -79,6 +82,9 @@ public class Main {
         totalInvestido7.metodoSomar(investimentos7);
         todosOsTotais.add(totalInvestido7.totalInvestidoNoDia);
 
+        SomandoSaldoDeContas totalInvestido8 = new SomandoSaldoDeContas("08/05/2022");
+        totalInvestido8.metodoSomar(investimentos8);
+        todosOsTotais.add(totalInvestido8.totalInvestidoNoDia);
         //System.out.println(todosOsTotais);
 
         CalculaVariacao calculadoraVariacao = new CalculaVariacao();
