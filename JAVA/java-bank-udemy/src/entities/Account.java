@@ -1,2 +1,4 @@
-package entities;public class Account {
+package entities;
+
+public class Account {
 }

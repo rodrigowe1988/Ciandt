@@ -1,13 +1,8 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        String contas[] = {"Rico", "Modal", "Clear", "Sicredi", "Nubank", "Santander", "Bradesco"};
 
         double totalDasContas = 0;
         double investimentosPorDia[] = {};
@@ -47,6 +42,9 @@ public class Main {
         //total investido no dia 08/05/2022
         double investimentos8[] = {86746.42, 74098.01, 22436.27, 12850.32, 10422.96};
 
+        //total investido no dia 20/05/2022
+        double investimentos9[] = {87144.94, 83761.99, 22304.26, 597.81, 41.57, 1336.01, 4170.01, 9362.28};
+
         //criando um array com todos os totais já salvos
         ArrayList<Double> todosOsTotais = new ArrayList<>();
 
@@ -85,24 +83,13 @@ public class Main {
         SomandoSaldoDeContas totalInvestido8 = new SomandoSaldoDeContas("08/05/2022");
         totalInvestido8.metodoSomar(investimentos8);
         todosOsTotais.add(totalInvestido8.totalInvestidoNoDia);
-        //System.out.println(todosOsTotais);
+
+        SomandoSaldoDeContas totalInvestido9 = new SomandoSaldoDeContas("20/05/2022");
+        totalInvestido9.metodoSomar(investimentos9);
+        todosOsTotais.add(totalInvestido9.totalInvestidoNoDia);
 
         CalculaVariacao calculadoraVariacao = new CalculaVariacao();
         calculadoraVariacao.calcularVariacao(todosOsTotais);
-
-//        //Loop para calcular a variação a cada consulta
-//        double teste[] = {1, 3.4, 6.8, 10, 15, 10};
-//
-//        for (int i = 0; i < teste.length-1; i++) {
-//            double variacao = 0;
-//            double testeUm = ( teste[i + 1] * 100 / teste[i] ) - 100;
-//            System.out.printf("A variação (em porcentagem) foi de : %.2f.\n", testeUm);
-//        }
-
-//        //ler os items do array do último até o primeiro
-//        for (int i = teste.length -1; i >= 0; i--) {
-//        }
-
 
 
 
