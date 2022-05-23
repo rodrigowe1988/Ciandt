@@ -22,7 +22,7 @@ const data = {
 			198934.07, 200446.81, 206258.76, 206684.85, 203544.56, 206553.98, 208273.01
 		],
 		borderColor: 'rgb(58, 123, 213, 1)',
-		label: "Evolução dos meus investimentos",
+		//label: ,
 		pointBackgroundColor: '#fff',
 		//fill: true,
 		//backgroundColor: gradient,
