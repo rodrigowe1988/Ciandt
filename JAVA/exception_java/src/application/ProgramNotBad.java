@@ -1,13 +1,13 @@
 package application;
 
-import entities.ReservationBad;
+import entities.ReservationNotBad;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class ProgramBad {
+public class ProgramNotBad {
 
     public static void main(String[] args) throws ParseException {
 
@@ -25,8 +25,8 @@ public class ProgramBad {
         if (!checkOut.after(checkIn)) {
             System.out.println("ERROR in reservation: Check-out date must be higher than check-in date.");
         } else {
-            ReservationBad reservationBad = new ReservationBad(number, checkIn, checkOut);
-            System.out.println("Reservation: " + reservationBad);
+            ReservationNotBad reservationNotBad = new ReservationNotBad(number, checkIn, checkOut);
+            System.out.println("Reservation: " + reservationNotBad);
 
             System.out.println();
             System.out.println("Enter data to update the reservation: ");
@@ -35,16 +35,15 @@ public class ProgramBad {
             System.out.println("Check-out date (dd/MM/yyyy)");
             checkOut = sdf.parse(sc.next());
 
-            Date now = new Date();
-            if (checkIn.before(now) || checkOut.before(now)) {
-                System.out.println("Error in reservation: reservation dates for update must be future.");
-            } else if (checkOut.after(checkIn)) {
-                System.out.println("Error in reservation Check-out date must be after check-in date. ");
+            String error = reservationNotBad.updateDates(checkIn, checkOut);
+            if (error != null) {
+                System.out.println("Error in reservation: " + error);
             } else {
-                reservationBad.updateDates(checkIn, checkOut);
-                System.out.println("Reservation: " + reservationBad);
+                System.out.println("Reservation: " + reservationNotBad);
+                reservationNotBad.updateDates(checkIn, checkOut);
             }
         }
         sc.close();
     }
 }
+

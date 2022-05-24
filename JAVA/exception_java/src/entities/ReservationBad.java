@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class Reservation {
+public class ReservationBad {
 
     private Integer roomNumber;
     private Date checkin;
@@ -12,7 +12,7 @@ public class Reservation {
 
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-    public Reservation(Integer roomNumber, Date checkin, Date checkout) {
+    public ReservationBad(Integer roomNumber, Date checkin, Date checkout) {
         this.roomNumber = roomNumber;
         this.checkin = checkin;
         this.checkout = checkout;
@@ -46,7 +46,7 @@ public class Reservation {
 
     @Override
     public String toString() {
-        return "Room"
+        return "Room: "
                 + roomNumber
                 + ", check-in: "
                 + sdf.format(checkin)
