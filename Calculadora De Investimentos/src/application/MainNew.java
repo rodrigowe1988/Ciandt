@@ -1,14 +1,14 @@
+package application;
+
 import entities.CalculaVariacao;
 import entities.SomandoSaldoDeContas;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
-public class Main {
+public class MainNew {
 
     public static void main(String[] args) {
 
@@ -113,6 +113,18 @@ public class Main {
 
         CalculaVariacao calculadoraVariacao = new CalculaVariacao();
         calculadoraVariacao.calcularVariacao(todosOsTotais);
+
+        String path = "/Users/rodrigoweber/Documents/teste_de_saida_investimentos.txt";
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+            for (Double totais: todosOsTotais) {
+                bw.write(String.valueOf(totais));
+                bw.newLine();
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }
