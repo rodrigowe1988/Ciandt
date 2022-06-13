@@ -1,5 +1,3 @@
-import java.util.Set;
-
 public class Product {
 
 	private String name;
@@ -28,7 +26,7 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Name: " + getName() + "-> Value:" + getValue();
+		return "Name: " + getName() + " -> Value:" + getValue();
 	}
 
 }
