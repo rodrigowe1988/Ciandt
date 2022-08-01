@@ -1,17 +1,24 @@
-const mongo = require("");
-const { default: mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 
 const connectToDatabase = async () => {
   await mongoose.connect(
-    "// mongodb+srv://teste_mongodb:<testando123>@nodejs-course.0lzoytn.mongodb.net/?retryWrites=true&w=majority",
+    `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@nodejs-course.0lzoytn.mongodb.net/database?retryWrites=true&w=majority
+	 `,
     (error) => {
       if (error) {
-        return console.log("An error has ocurred with the database: ", error);
+        return console.log(
+          "An error has ocurred: ",
+          error
+        );
       }
 
-      return console.log("The connection with database has been succeed");
+      return console.log("Conection with database has been succeed!");
     }
   );
 };
 
 module.exports = connectToDatabase;
+
+
+
+//mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@nodejs-course.0lzoytn.mongodb.net/?retryWrites=true&w=majority
