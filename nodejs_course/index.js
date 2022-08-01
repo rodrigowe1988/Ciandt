@@ -11,7 +11,7 @@ connectToDatabase();
 //require("./modules/fs");
 //require("./modules/http");
 
-//require("./modules/express");
+require("./modules/express");
 
 //const person1 = new Person("Rodrigo");
 
